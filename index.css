@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0%;
+}
+
+/* for navbar */
+.main-nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 4px 2px -2px rgba(194, 191, 191, 0.103);
+
+}
+
+.logo{
+    height: 43px;
+    width: 169px;
+    object-fit: cover;
+    object-position: center;
+}
+.search-icon{
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Urbanist", sans-serif;    color: #FF6481;
+}
+.search-text{
+    color: black;
+    margin-left: 10px;
+}
+.sidebar{
+    margin-right: 2rem;
+    height: 29px;
+    width: 29px;
+    cursor: pointer;
+}
+#sidebar:hover{
+    transform: scale3d(1.1, 1.1, 1);
+    transition: ease-in 0.4s;
+}
+
+@media (max-width:750px) {
+    .logo{
+        height: 36px;
+        width: 139px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .search-text{
+        color: black;
+        display: none;
+    }
+}
+@media (max-width:450px) {
+    .logo{
+        height: 27px;
+        width: 110px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .search-text{
+        color: black;
+        display: none;
+    }
+}
+@media (max-width:350px) {
+    .logo{
+        height: 20px;
+        width: 90px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .search-text{
+        color: black;
+        display: none;
+    }
+    .sidebar{
+        margin-right: 1rem;
+    }
+    .search-icon{
+        margin-left: 1rem;
+    }
+}
+
+/* //forsidebar */
+
+/* using the categori icon for reletive */
+
+#sidebar{
+    position: relative;
+}
+
+
+.siderBar-appear{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+}
+.for-side-logo{
+    margin-top: 4rem;
+}
+
+.list-of-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: medium;
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-top: 3rem;
+    gap: 13px;
+}
+.links{
+    text-decoration: none;
+    color: #282424;
+    padding: 15px;
+}
+.links:hover{
+    text-decoration: underline #282424;
+}
+.lo-and-sub{
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+.log-in{
+    text-decoration: none;
+    height: 26px;
+    width: 100px;
+    margin-right: 1rem;
+    color: #282424;
+    font-weight: 500;
+}
+.log-in:hover{
+color: #FF6481;
+}
+.subscribe{
+    text-decoration: none;
+    height: 34px;
+    width: 143px;
+    background-color: #FF6481;
+    color: white;
+    padding: 5px 22px;
+    border-radius: 3px;
+}
+.subscribe:hover{
+    background-color: #282424;
+
+}
+
+/* icon for closing sidebar */
+.icon-close{
+    padding: 10px 15px;
+    font-weight: lighter;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #FF6481;
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transition: .3s ease-in-out;
+
+}
+
+.icon-close:hover{
+    padding-right: 26px;
+    transition: .3s ease-in-out;
+}
