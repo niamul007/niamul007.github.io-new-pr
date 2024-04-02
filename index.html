@@ -1,58 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <div class="main-nav">
-        <a href="#" class="search-icon"><i class="fa fa-search " aria-hidden="true"></i> <span class="search-text">Quick Search...</span></a>
-        <img src="logo-zento-personal-1 (1).svg" alt="" class="logo" id="logo">
-        <img src="categories.png" alt="" class="sidebar" id="sidebar">
+      <a href="#" class="search-icon"
+        ><i class="fa fa-search" aria-hidden="true"></i>
+        <span class="search-text">Quick Search...</span></a
+      >
+      <img src="logo-zento-personal-1 (1).svg" alt="" class="logo" id="logo" />
+      <span class="showbar">
+        <img src="categories.png" alt="" class="sidebar" id="sidebar" />
+      </span>
     </div>
-    <div class="dark">
-
+    <div class="blur">
     </div>
+      <div class="searchApper">
+        <div class="take-in-and-search">
+          <span class="s-icon">
+            <i class="fa fa-search" aria-hidden="true" id="search-icon"></i>
+          </span>
+          <input
+            type="search"
+            name=""
+            placeholder="Search tags, posts and authors"
+            id="searchShow"
+          />
+        </div>
+        <p class="cancle">Cancel</p>
+      </div>
+    <div class="dark"></div>
     <div class="siderBar-appear">
-        <div class="container-sidebar">
-            <div class="for-side-logo">
-                <img src="logo-zento-personal-1 (1).svg" alt="" class="logo" id="logo">
-                <span class="icon-close"><i class="fa fa-times fa-2x" aria-hidden="true"></i>
-                </span>
-            </div>
-            <div class="list-of-links">
-                <a href="" class="links"><strong>✨Home</strong></a>
-                <a href="" class="links">Style Guide 🌟 </a>
-                <a href="" class="links">Explore Our Tags</a>
-                <a href="" class="links">Vertical Post</a>
-                <a href="" class="links">Classic Post</a>
-                <a href="" class="links">Fullwidth Post</a>
-                <a href="" class="links">No Sidebar Post</a>
-                <a href="" class="links">Home Demos 🚀</a>
-                <div class="lo-and-sub">
-                    <a href="" class="log-in">Login</a>
-                    <a href="" class="subscribe">Subscribe</a>
-                </div>
-            </div>
+      <div class="container-sidebar">
+        <div class="for-side-logo">
+          <img
+            src="logo-zento-personal-1 (1).svg"
+            alt=""
+            class="logo"
+            id="logo"
+          />
+          <span class="icon-close"
+            ><i class="fa fa-times fa-2x" aria-hidden="true"></i>
+          </span>
         </div>
+        <div class="list-of-links">
+          <a href="" class="links"><strong>✨Home</strong></a>
+          <a href="" class="links">Style Guide 🌟 </a>
+          <a href="" class="links">Explore Our Tags</a>
+          <a href="" class="links">Vertical Post</a>
+          <a href="" class="links">Classic Post</a>
+          <a href="" class="links">Fullwidth Post</a>
+          <a href="" class="links">No Sidebar Post</a>
+          <a href="" class="links">Home Demos 🚀</a>
+          <div class="lo-and-sub">
+            <a href="" class="log-in">Login</a>
+            <a href="" class="subscribe">Subscribe</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <main>
-        <div class="introducton">
-            <div class="intro">
-                <p class="name">Hey, I'm Jonathan Doe 👋</p>
-                <p class="about">I'm a design technologist in Atlanta. I like working on the front-end of the web. This is my site, Zento where I blog, share and write about my personal projects..</p>
-                <div class="input-div">
-                    <input type="email" name="Enter your email address" id="email">
-                    <button type="submit" id="btn">Get started</button>
-                </div>
+      <div class="introducton">
+        <div class="intro">
+          <p class="name">Hey, I'm <span class="clr-name">Jonathan Doe 👋</span></p>
+          <p class="about">
+            I'm a <strong>design technologist</strong> in Atlanta. I like working on the
+            front-end of the web. This is my site,<strong> Zento</strong> where I blog, share and
+            write about my personal projects..
+          </p>
+
+          <div class="input-div">
+            <div class="connet-p">
+              <p class="connet">Let's connect</p>
             </div>
-            <div class="hero-img">
-                <img src="Rectangle-660-2.jpg" alt="" class="hero">
-            </div>
+            <input type="email" name=""placeholder="Enter your email address" id="email" />
+            <button type="submit" id="btn">Get Started</button>
+          </div>
         </div>
-    </main>
-</body>
+        <div class="hero-img">
+          <img src="Rectangle-660-2.jpg" alt="" class="hero" />
+        </div>
+      </div>
+      <div class="tranding-topic">
+        <div class="topic-container">
+          <div class="topic-img-div">
+            <img src="surfer-on-a-pink-background-in-the-style-of-minimalist-sets-vector-chrome-plated-subtle-color-variations-kinuko-y-craft-dan-matutina-realistic-forms-everyday-life-65c038a134d5d-4.jpg"  alt="" class="topic-img">
+            <p class="topic-name">Lifestyle</p>
+            <div class="post-count">7</div>
+          </div>
+        </div>
+      </div>
+    <script src="index.js"></script>
+  </body>
 </html>
