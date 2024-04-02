@@ -7,6 +7,10 @@
 main{
     padding-top: 5rem;
 }
+body{
+    background-color: #fddee1fb;
+
+}
 
 /* for navbar */
 .main-nav {
@@ -282,15 +286,15 @@ color: #FF6481;
     padding-top: 5rem;
     height: 100vh;
     width: 100%;
-    background-color: #fddee1fb;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    font-family: "Urbanist", sans-serif; 
 
 }
 
 .intro{
-    width: 70%;
+    width: 50%;
     margin-left: 3rem;
 }
 .name{
@@ -314,14 +318,41 @@ color: #FF6481;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2rem;
 }
 
 
 .hero{
-    height: 80%;
-    width: 70%;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
+    animation-name: dance;
+    animation-duration: 30s;
+    animation-timing-function: linear; /* Use linear timing function for smoothness */
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
 }
+@keyframes dance {
+    0% {
+      border-radius: 88% 49% 82% 23% / 52% 66% 34% 79% ; /* Start with a circular shape */
+    }
+  20% {
+      border-radius: 88% 87% 82% 38% / 52% 15% 74% 79% ; /* Keep it circular during the animation */
+    }
+    40% {
+      border-radius: 88% 87% 82% 100% / 32% 83% 0% 79% ; /* Still circular */
+    }
+    60% {
+      border-radius: 41% 61% 100% 100% / 0% 100% 0% 100% ; /* Maintain circularity */
+    }
+    80% {
+      border-radius: 84% 0% 100% 63% / 69% 32% 82% 100% ; /* End with a circular shape */
+    }
+    100%{
+      border-radius: 49% 34% 100% 63% / 69% 74% 41% 100% ;
+    }
+  }
 .input-div{
     margin-top: 3rem;
     height: 54px;
@@ -379,22 +410,61 @@ color: #FF6481;
 .tranding-topic{
     height: 50vh;
     width: 100%;
-}
-.topic-img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Urbanist", sans-serif;  
     position: relative;
 }
+.tranding-topics-header{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #282424;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.tranding-topics-header .fa-bolt{
+    color: #FF6481;
+}
+.topic-img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.topic-img-div{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: relative;
 
+}
 .post-count{
-    height: 15px;
-    width: 15px;
+    height: 24px;
+    width: 24px;
     border-radius: 50%;
     color: #f8f1f1;
     background-color: #FF6481;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
-    right: 1rem;
+    right: -.11rem;
+    font-family: "Urbanist", sans-serif;  
+
+}
+
+.all-topic-in-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 88%;
+    height: 150px;
+    background-color: #ffff;
+    border-radius: 100px;
 }
