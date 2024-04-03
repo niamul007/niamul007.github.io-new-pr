@@ -45,12 +45,53 @@
     text-decoration: none;
     cursor: pointer;
   }
+  .test {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%; /* Make it more circular */
+  animation-name: dance;
+  animation-duration: 30s;
+  animation-timing-function: linear; /* Use linear timing function for smoothness */
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+
+@keyframes dance {
+  0% {
+    border-radius: 88% 49% 82% 23% / 52% 66% 34% 79% ; /* Start with a circular shape */
+  }
+20% {
+    border-radius: 88% 87% 82% 38% / 52% 15% 74% 79% ; /* Keep it circular during the animation */
+  }
+  40% {
+    border-radius: 88% 87% 82% 100% / 32% 83% 0% 79% ; /* Still circular */
+  }
+  60% {
+    border-radius: 41% 61% 100% 100% / 0% 100% 0% 100% ; /* Maintain circularity */
+  }
+  80% {
+    border-radius: 84% 0% 100% 63% / 69% 32% 82% 100% ; /* End with a circular shape */
+  }
+  100%{
+    border-radius: 49% 34% 100% 63% / 69% 74% 41% 100% ;
+  }
+}
+
+  .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <button id="showDivBtn">Show Div</button>
   <h1>dfsdlkk</h1>
+  <div class="img">
+    <img src="Rectangle-660-2.jpg" alt="" class="test">
+  </div>
   <div id="overlay"></div>
   <div id="myModal" class="modal">
     <div class="modal-content">
