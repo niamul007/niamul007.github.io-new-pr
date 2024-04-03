@@ -5,14 +5,16 @@
     margin: 0%;
 }
 
-body{
+body {
     background-color: #fddee1fb;
+    text-decoration: none;
+
 
 }
 
 /* for navbar */
 .main-nav {
-    z-index:3;
+    z-index: 3;
     height: 80px;
     width: 100%;
     display: flex;
@@ -28,72 +30,84 @@ body{
 
 }
 
-.logo{
+.logo {
     height: 43px;
     width: 169px;
     object-fit: cover;
     object-position: center;
 }
-.search-icon{
+
+.search-icon {
     margin-left: 2rem;
     text-decoration: none;
     font-size: 17px;
-    font-family: "Urbanist", sans-serif;    color: #FF6481;
+    font-family: "Urbanist", sans-serif;
+    color: #FF6481;
 }
-.search-text{
+
+.search-text {
     color: black;
     margin-left: 10px;
 }
-.sidebar{
+
+.sidebar {
     margin-right: 2rem;
     height: 29px;
     width: 29px;
     cursor: pointer;
 }
-#sidebar:hover{
+
+#sidebar:hover {
     transform: scale3d(1.1, 1.1, 1);
     transition: ease-in 0.4s;
 }
 
 @media (max-width:750px) {
-    .logo{
+    .logo {
         height: 36px;
         width: 139px;
         object-fit: cover;
         object-position: center;
     }
-    .search-text{
+
+    .search-text {
         color: black;
         display: none;
     }
 }
+
 @media (max-width:450px) {
-    .logo{
+    .logo {
         height: 27px;
         width: 110px;
         object-fit: cover;
         object-position: center;
     }
-    .search-text{
+
+    .search-text {
         color: black;
         display: none;
     }
 }
+
 @media (max-width:350px) {
-    .logo{
+    .logo {
         height: 20px;
         width: 90px;
         object-fit: cover;
         object-position: center;
     }
-    .search-text{
+
+    .search-text {
         color: black;
         display: none;
     }
-    .sidebar{
+
+    .sidebar {
         margin-right: 1rem;
     }
-    .search-icon{
+
+    .search-icon {
         margin-left: 1rem;
     }
 }
@@ -104,9 +118,12 @@ body{
 .searchApper {
     font-family: "urbanist" sans-serif;
     position: absolute;
-    top: 40%; /* Vertically center */
-    left: 50%; /* Horizontally center */
-    transform: translate(-50%, -50%); /* Adjust for centering */
+    top: 40%;
+    /* Vertically center */
+    left: 50%;
+    /* Horizontally center */
+    transform: translate(-50%, -50%);
+    /* Adjust for centering */
     height: 70px;
     width: 50%;
     background-color: white;
@@ -117,7 +134,8 @@ body{
     z-index: 99;
     display: none;
 }
-.take-in-and-search{
+
+.take-in-and-search {
     width: 90%;
     margin-left: 10px;
     display: flex;
@@ -125,7 +143,8 @@ body{
     align-items: center;
     margin-top: 5px;
 }
-#searchShow{
+
+#searchShow {
     padding: 20px;
     border: none;
     width: 100%;
@@ -133,30 +152,36 @@ body{
     font-family: "urbanist" sans-serif;
     color: #282424;
 }
-#searchShow:focus{
+
+#searchShow:focus {
     outline: none;
 }
-input::placeholder{
+
+input::placeholder {
     font-size: 16px;
     color: #888889;
 }
-.cancle{
+
+.cancle {
     margin-right: 10px;
     display: none;
 }
-.s-icon{
-    padding-left:2rem ;
+
+.s-icon {
+    padding-left: 2rem;
 }
-#search-icon{
+
+#search-icon {
     font-size: 19px;
     color: #FF6481;
 }
 
-.blur{
+.blur {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Adjust for centering */
+    transform: translate(-50%, -50%);
+    /* Adjust for centering */
     height: 100%;
     width: 100%;
     backdrop-filter: blur(6px);
@@ -171,12 +196,12 @@ input::placeholder{
 
 /* using the categori icon for reletive */
 
-#sidebar{
+#sidebar {
     position: relative;
 }
 
 
-.siderBar-appear{
+.siderBar-appear {
     position: absolute;
     top: 0;
     right: 0;
@@ -190,11 +215,12 @@ input::placeholder{
     display: none;
     overflow: auto;
 }
-.for-side-logo{
+
+.for-side-logo {
     margin-top: 4rem;
 }
 
-.list-of-links{
+.list-of-links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,19 +232,23 @@ input::placeholder{
     margin-top: 3rem;
     gap: 13px;
 }
-.links{
+
+.links {
     text-decoration: none;
     color: #282424;
     padding: 15px;
 }
-.links:hover{
+
+.links:hover {
     text-decoration: underline #282424;
 }
-.lo-and-sub{
+
+.lo-and-sub {
     margin-top: 2rem;
     padding-bottom: 3rem;
 }
-.log-in{
+
+.log-in {
     text-decoration: none;
     height: 26px;
     width: 100px;
@@ -226,10 +256,12 @@ input::placeholder{
     color: #282424;
     font-weight: 500;
 }
-.log-in:hover{
-color: #FF6481;
+
+.log-in:hover {
+    color: #FF6481;
 }
-.subscribe{
+
+.subscribe {
     text-decoration: none;
     height: 34px;
     width: 143px;
@@ -238,13 +270,14 @@ color: #FF6481;
     padding: 5px 22px;
     border-radius: 3px;
 }
-.subscribe:hover{
+
+.subscribe:hover {
     background-color: #282424;
 
 }
 
 /* icon for closing sidebar */
-.icon-close{
+.icon-close {
     padding: 10px 15px;
     font-weight: lighter;
     border-top-left-radius: 30px;
@@ -258,12 +291,12 @@ color: #FF6481;
 
 }
 
-.icon-close:hover{
+.icon-close:hover {
     padding-right: 26px;
     transition: .3s ease-in-out;
 }
 
-.dark{
+.dark {
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -279,11 +312,12 @@ color: #FF6481;
 
 
 /* from here started body content  */
-main{
+main {
     padding-left: 2rem;
     right: 2rem;
 }
-.introducton{
+
+.introducton {
     padding-top: 5rem;
 
     height: 100vh;
@@ -291,32 +325,36 @@ main{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: "Urbanist", sans-serif; 
+    font-family: "Urbanist", sans-serif;
     gap: 30px;
 }
 
-.intro{
+.intro {
     width: 50%;
     /* margin-left: 3rem; */
 }
-.name{
+
+.name {
     margin-top: -2rem;
     font-size: 30px;
-    font-family: "Urbanist", sans-serif; 
+    font-family: "Urbanist", sans-serif;
     padding-bottom: 2rem;
 }
-.clr-name{
+
+.clr-name {
     color: #FF6481;
     font-weight: 700;
 }
-.about{
+
+.about {
     font-size: 17px;
     color: #282424;
     line-height: 30px;
-    font-family: "Urbanist", sans-serif;  
-    padding-bottom: 2rem; 
+    font-family: "Urbanist", sans-serif;
+    padding-bottom: 2rem;
 }
-.hero-img{
+
+.hero-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,38 +362,51 @@ main{
 }
 
 
-.hero{
+.hero {
     height: 400px;
     width: 400px;
     border-radius: 50%;
     animation-name: dance;
     animation-duration: 30s;
-    animation-timing-function: linear; /* Use linear timing function for smoothness */
+    animation-timing-function: linear;
+    /* Use linear timing function for smoothness */
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-play-state: running;
 }
+
 @keyframes dance {
     0% {
-      border-radius: 88% 49% 82% 23% / 52% 66% 34% 79% ; /* Start with a circular shape */
+        border-radius: 88% 49% 82% 23% / 52% 66% 34% 79%;
+        /* Start with a circular shape */
     }
-  20% {
-      border-radius: 88% 87% 82% 38% / 52% 15% 74% 79% ; /* Keep it circular during the animation */
+
+    20% {
+        border-radius: 88% 87% 82% 38% / 52% 15% 74% 79%;
+        /* Keep it circular during the animation */
     }
+
     40% {
-      border-radius: 88% 87% 82% 100% / 32% 83% 0% 79% ; /* Still circular */
+        border-radius: 88% 87% 82% 100% / 32% 83% 0% 79%;
+        /* Still circular */
     }
+
     60% {
-      border-radius: 41% 61% 100% 100% / 0% 100% 0% 100% ; /* Maintain circularity */
+        border-radius: 41% 61% 100% 100% / 0% 100% 0% 100%;
+        /* Maintain circularity */
     }
+
     80% {
-      border-radius: 84% 0% 100% 63% / 69% 32% 82% 100% ; /* End with a circular shape */
+        border-radius: 84% 0% 100% 63% / 69% 32% 82% 100%;
+        /* End with a circular shape */
     }
-    100%{
-      border-radius: 49% 34% 100% 63% / 69% 74% 41% 100% ;
+
+    100% {
+        border-radius: 49% 34% 100% 63% / 69% 74% 41% 100%;
     }
-  }
-.input-div{
+}
+
+.input-div {
     margin-top: 3rem;
     height: 54px;
     width: 99%;
@@ -367,14 +418,16 @@ main{
     position: relative;
     z-index: 1;
 }
-.connet-p{
+
+.connet-p {
     position: absolute;
     top: -2rem;
     left: 0;
     padding-bottom: 1rem;
- 
+
 }
-.connet{
+
+.connet {
 
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
@@ -382,16 +435,18 @@ main{
     overflow: hidden;
 }
 
-#email{
+#email {
     width: 70%;
     height: 50px;
     border: none;
     margin-left: 1rem;
 }
-#email:focus{
+
+#email:focus {
     outline: none;
 }
-#btn{
+
+#btn {
     margin-right: .40rem;
     width: 144px;
     height: 44px;
@@ -404,28 +459,30 @@ main{
     text-align: center;
     border-radius: 4px;
 }
-  @media(max-width:780px){
-    #introducton{
+
+@media(max-width:780px) {
+    #introducton {
         margin-top: 5rem;
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: "Urbanist", sans-serif; 
+        font-family: "Urbanist", sans-serif;
         gap: 50px;
         flex-direction: column-reverse;
         overflow: hidden;
     }
-    
-    .intro{
+
+    .intro {
         margin-top: 4rem;
         padding-bottom: 4rem;
-        width:100%;
+        width: 100%;
         height: 100%;
         padding: 0px 20px;
     }
-    .input-div{
+
+    .input-div {
         margin-top: 3rem;
         margin-bottom: 4rem;
         height: 54px;
@@ -438,24 +495,25 @@ main{
         position: relative;
         z-index: 1;
     }
-    
 
-    
-  }
+
+
+}
 
 
 /* for topics */
 
-.tranding-topic{
+.tranding-topic {
     height: 50vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: "Urbanist", sans-serif;  
+    font-family: "Urbanist", sans-serif;
     position: relative;
 }
-.tranding-topics-header{
+
+.tranding-topics-header {
     position: absolute;
     top: 3%;
     left: 50%;
@@ -465,16 +523,19 @@ main{
     font-weight: 700;
     text-decoration: none;
 }
-.tranding-topics-header .fa-bolt{
+
+.tranding-topics-header .fa-bolt {
     color: #FF6481;
 }
-.topic-img{
+
+.topic-img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
     position: relative;
 }
-.topic-name{
+
+.topic-name {
     position: absolute;
     bottom: -2.3rem;
     left: 50%;
@@ -484,14 +545,16 @@ main{
     font-size: 14px;
     padding-top: .50rem;
 }
-.topic-img-div{
+
+.topic-img-div {
     height: 75px;
     width: 75px;
     border-radius: 50%;
     position: relative;
 
 }
-.post-count{
+
+.post-count {
     height: 24px;
     width: 24px;
     border-radius: 50%;
@@ -504,11 +567,11 @@ main{
     position: absolute;
     top: 0;
     right: -.11rem;
-    font-family: "Urbanist", sans-serif;  
+    font-family: "Urbanist", sans-serif;
 
 }
 
-.all-topic-in-one{
+.all-topic-in-one {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -521,55 +584,61 @@ main{
     margin-right: 2rem;
 }
 
-#topic-container-last{
+#topic-container-last {
     display: none;
 }
-#main-2{
+
+#main-2 {
     margin: 0;
     padding: 0;
 }
-@media(max-width:800px){
-    .tranding-topic{
+
+@media(max-width:800px) {
+    .tranding-topic {
         padding-top: 5rem;
         padding-bottom: 4rem;
         height: 100%;
         width: 100%;
-        font-family: "Urbanist", sans-serif;  
+        font-family: "Urbanist", sans-serif;
         position: relative;
         flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    #all-topic-in-one{
+
+    #all-topic-in-one {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 60px;
         width: 100%;
-        height:340px;
+        height: 340px;
         background-color: #ffff;
         align-self: center;
         border-radius: 0%;
     }
-    .topic-img{
+
+    .topic-img {
         height: 70px;
         width: 70px;
         border-radius: 50%;
         position: relative;
     }
-    .topic-name{
+
+    .topic-name {
         position: absolute;
         bottom: -2.3rem;
         left: 50%;
         transform: translate(-50%, -50%);
-    
+
         font-weight: 600;
         font-size: 14px;
         padding-top: .30rem;
     }
-    .post-count{
+
+    .post-count {
         height: 24px;
         width: 24px;
         border-radius: 50%;
@@ -582,31 +651,34 @@ main{
         position: absolute;
         top: 0;
         right: -.11rem;
-        font-family: "Urbanist", sans-serif;  
-    
+        font-family: "Urbanist", sans-serif;
+
     }
-    #topic-container-last{
+
+    #topic-container-last {
         display: flex;
     }
-    
+
 }
 
 
 
 /* for post divs */
-.post-container{
+.post-container {
     height: 100%;
     width: 100%;
 
 }
-.posts-div{
+
+.posts-div {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.post-1{
+
+.post-1 {
     height: 320px;
     width: 90%;
     display: flex;
@@ -619,7 +691,8 @@ main{
 
 
 }
-.tag-above-img{
+
+.tag-above-img {
     position: absolute;
     top: 20%;
     left: 10px;
@@ -627,7 +700,7 @@ main{
     background-color: rgb(8, 165, 165);
     color: white;
     font-size: 14px;
-    font-family: "Urbanist", sans-serif;  
+    font-family: "Urbanist", sans-serif;
     font-weight: 700;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -635,68 +708,79 @@ main{
     transition: .3s ease-in;
 
 }
-.tag-above-img:hover{
+
+.tag-above-img:hover {
     padding: 10px 30px;
     transition: .3s ease-in;
 }
-.post-img{
+
+.post-img {
     height: 299px;
     width: 266px;
     border-radius: 15px;
     padding: 10px;
 }
 
-#main-3{
+#main-3 {
     margin: 0;
     padding: 0;
 }
+
 /* .read-time{
     display: flex;
     justify-content:start;
     align-items:flex-start;
     gap: 20px;
 } */
-.about-post-1{
-    width: 80%;
+.about-post-1 {
+    width: 70%;
     height: 299px;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
     font-family: "Urbanist", sans-serif;
+    text-decoration: none;
+
 }
 
-.clock{
+.clock {
     font-size: medium;
     color: #FF6481;
 }
-.time-to-read{
+
+.time-to-read {
     margin-bottom: 2rem;
     font-size: 14px;
     color: #727070;
 }
-.title{
+
+.title {
     font-size: 24px;
     color: #282424;
     font-weight: 800;
     margin-bottom: 2rem;
 }
-.post-content{
+
+.post-content {
     line-height: 30px;
     color: #282424;
 }
-.tags-div{
+
+.tags-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.tags-in-post{
+
+.tags-in-post {
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
+
 .tag-1 {
     margin-right: 20px;
     font-size: 14px;
@@ -727,7 +811,7 @@ main{
     /* Adjust color opacity on hover if needed */
 }
 
-.tag-2{
+.tag-2 {
     cursor: pointer;
     margin-right: 20px;
     font-size: 14px;
@@ -735,10 +819,11 @@ main{
     position: relative;
 
 }
-.tag-2::before{
+
+.tag-2::before {
     content: '';
     position: absolute;
-    top:40%;
+    top: 40%;
     left: -15px;
     text-align: center;
     height: 6px;
@@ -748,6 +833,7 @@ main{
     transition: .2s ease-in;
 
 }
+
 .tag-2:hover::before {
     height: 7px;
     width: 10px;
@@ -757,21 +843,143 @@ main{
 
     /* Adjust color opacity on hover if needed */
 }
-.authors-div{
+
+.authors-div {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     width: 20%;
     gap: 10px;
     margin-right: 1rem;
 }
-.author-name{
-    font-size:14px ;
-    font-weight: 900;
+
+.author-name {
+    font-size: 14px;
+    font-weight: 600;
 }
-.author-img{
+
+.author-name:hover {
+    color: #FF6481;
+    cursor: pointer;
+}
+
+.author-img {
     height: 30px;
     width: 30px;
     border-radius: 50%;
 
+}
+
+@media(max-width:790px) {
+    .post-container {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .posts-div {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post-1 {
+        height: 70%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        gap: 10px;
+        border-radius: 15px;
+        flex-direction: column;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .tag-above-img {
+        position: absolute;
+        top: 20%;
+        left: 10px;
+        padding: 10px 25px;
+        background-color: rgb(8, 165, 165);
+        color: white;
+        font-size: 14px;
+        font-family: "Urbanist", sans-serif;
+        font-weight: 700;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        transition: .3s ease-in;
+
+    }
+
+    .tag-above-img:hover {
+        padding: 10px 30px;
+        transition: .3s ease-in;
+    }
+
+    .post-img {
+        height: 340px;
+        width: 97%;
+        border-radius: 15px;
+        padding: .50rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #main-3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* .read-time{
+        display: flex;
+        justify-content:start;
+        align-items:flex-start;
+        gap: 20px;
+    } */
+    #about-post-1 {
+        margin-top: -2rem;
+        width: 70%;
+        height: 299px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Urbanist", sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .clock {
+        font-size: medium;
+        color: #FF6481;
+    }
+
+    .time-to-read {
+        margin-top: 1.5rem;
+        font-size: 14px;
+        color: #727070;
+        text-decoration: none;
+
+    }
+
+    .title {
+        text-decoration: none;
+
+        font-size: 24px;
+        color: #282424;
+        font-weight: 800;
+    }
+
+    .post-content {
+        text-decoration: none;
+
+        line-height: 30px;
+        color: #282424;
+    }
+
+  
 }
