@@ -3,6 +3,8 @@
 * {
     padding: 0;
     margin: 0%;
+    font-family: "Urbanist", sans-serif;
+
 }
 
 body {
@@ -313,7 +315,7 @@ input::placeholder {
 
 /* from here started body content  */
 main {
-    padding-left: 2rem;
+    padding-left: 1.4rem;
     right: 2rem;
 }
 
@@ -330,7 +332,7 @@ main {
 }
 
 .intro {
-    width: 50%;
+    width: 66%;
     /* margin-left: 3rem; */
 }
 
@@ -363,11 +365,11 @@ main {
 
 
 .hero {
-    height: 400px;
-    width: 400px;
+    height: 60%;
+    width: 60%;
     border-radius: 50%;
     animation-name: dance;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     /* Use linear timing function for smoothness */
     animation-iteration-count: infinite;
@@ -377,32 +379,32 @@ main {
 
 @keyframes dance {
     0% {
-        border-radius: 88% 49% 82% 23% / 52% 66% 34% 79%;
+        border-radius: 86% 82% 100% 76% / 69% 74% 78% 100%;
         /* Start with a circular shape */
     }
 
     20% {
-        border-radius: 88% 87% 82% 38% / 52% 15% 74% 79%;
+        border-radius: 76% 82% 100% 51% / 69% 73% 66% 100%;
         /* Keep it circular during the animation */
     }
 
     40% {
-        border-radius: 88% 87% 82% 100% / 32% 83% 0% 79%;
+        border-radius: 93% 82% 100% 85% / 69% 73% 77% 100%;
         /* Still circular */
     }
 
     60% {
-        border-radius: 41% 61% 100% 100% / 0% 100% 0% 100%;
+        border-radius: 100% 82% 100% 85% / 100% 100% 100% 100%;
         /* Maintain circularity */
     }
 
     80% {
-        border-radius: 84% 0% 100% 63% / 69% 32% 82% 100%;
+        border-radius: 88% 100% 100% 59% / 100% 37% 68% 100%;
         /* End with a circular shape */
     }
 
     100% {
-        border-radius: 49% 34% 100% 63% / 69% 74% 41% 100%;
+        border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
     }
 }
 
@@ -474,12 +476,17 @@ main {
         overflow: hidden;
     }
 
+    #main-1 {
+        margin-right: 1rem;
+    }
+
     .intro {
         margin-top: 4rem;
         padding-bottom: 4rem;
         width: 100%;
         height: 100%;
-        padding: 0px 20px;
+        padding: 0px 17px;
+        padding-right: 1rem;
     }
 
     .input-div {
@@ -607,7 +614,7 @@ main {
         align-items: center;
     }
 
-    #all-topic-in-one {
+    .all-topic-in-one {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -661,6 +668,82 @@ main {
 
 }
 
+@media(max-width:360px) {
+    .tranding-topic {
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        height: 100%;
+        width: 100%;
+        font-family: "Urbanist", sans-serif;
+        position: relative;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #all-topic-in-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 100%;
+        height: 100%;
+        background-color: #ffff;
+        align-self: center;
+        border-radius: 0%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .topic-img {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .topic-name {
+        position: absolute;
+        bottom: -2.3rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        font-size: 14px;
+        padding-top: .30rem;
+    }
+
+    .post-count {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        color: #f8f1f1;
+        background-color: #FF6481;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: -.11rem;
+        font-family: "Urbanist", sans-serif;
+
+    }
+
+    #topic-container-last {
+        display: flex;
+    }
+
+    .tranding-topics-header {
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
 
 
 /* for post divs */
@@ -676,38 +759,23 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .post-1 {
     height: 320px;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
     gap: 30px;
     border-radius: 15px;
-    position: relative;
-
-
+    border-radius: 15px;
+    padding: 5px 5px 5px 5px;
 }
 
-.tag-above-img {
-    position: absolute;
-    top: 20%;
-    left: 10px;
-    padding: 10px 25px;
-    background-color: rgb(8, 165, 165);
-    color: white;
-    font-size: 14px;
-    font-family: "Urbanist", sans-serif;
-    font-weight: 700;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-
-    transition: .3s ease-in;
-
-}
 
 .tag-above-img:hover {
     padding: 10px 30px;
@@ -718,11 +786,11 @@ main {
     height: 299px;
     width: 266px;
     border-radius: 15px;
-    padding: 10px;
 }
 
+
 #main-3 {
-    margin: 0;
+    margin: 4rem;
     padding: 0;
 }
 
@@ -787,6 +855,7 @@ main {
     font-weight: 700;
     position: relative;
     cursor: pointer;
+    color: #282424;
 }
 
 .tag-1::before {
@@ -812,6 +881,7 @@ main {
 }
 
 .tag-2 {
+    color: #282424;
     cursor: pointer;
     margin-right: 20px;
     font-size: 14px;
@@ -848,14 +918,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 22%;
     gap: 10px;
     margin-right: 1rem;
+    text-decoration: none;
 }
 
 .author-name {
     font-size: 14px;
     font-weight: 600;
+    color: #282424;
+    margin-right: 1rem;
 }
 
 .author-name:hover {
@@ -868,8 +941,110 @@ main {
     width: 30px;
     border-radius: 50%;
 
+
 }
 
+.post-img-1 {
+    height: 299px;
+    width: 266px;
+    position: relative;
+}
+
+.tag-above-img {
+    position: absolute;
+    top: 20%;
+    padding: 10px 25px;
+    background-color: rgb(8, 165, 165);
+    color: white;
+    font-size: 14px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: .3s ease-in;
+}
+
+/* changes for diffrent post imges nad and tags this is the boundry */
+
+.title:hover {
+    text-decoration: underline #282424;
+}
+
+.post-2-above-img {
+    position: absolute;
+    top: 20%;
+    padding: 10px 25px;
+    background-color: rgb(230, 106, 230);
+    color: white;
+    font-size: 14px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: .3s ease-in;
+
+}
+
+.post-2-above-img:hover {
+    padding: 10px 30px;
+    transition: .3s ease-in;
+}
+
+.post-3-above-img {
+    position: absolute;
+    top: 20%;
+    padding: 10px 25px;
+    background-color: rgb(47, 202, 241);
+    color: white;
+    font-size: 14px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: .3s ease-in;
+}
+
+
+.post-5-above-img {
+    position: absolute;
+    top: 20%;
+    padding: 10px 25px;
+    background-color: rgb(114, 114, 242);
+    color: white;
+    font-size: 14px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: .3s ease-in;
+}
+
+.post-6-above-img {
+    position: absolute;
+    top: 20%;
+    padding: 10px 25px;
+    background-color: rgb(248, 158, 173);
+    color: white;
+    font-size: 14px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: .3s ease-in;
+}
+
+
+
+
+/* boundry end here for some chanes  */
+
+/* @media(min-width:790px){
+    #post-1{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    
+} */
 @media(max-width:790px) {
     .post-container {
         height: 100%;
@@ -887,22 +1062,21 @@ main {
 
     .post-1 {
         height: 70%;
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: white;
         gap: 10px;
-        border-radius: 15px;
+        padding: 10px 5px 5px 5px;
+        margin: 2rem;
         flex-direction: column;
         text-decoration: none;
-        position: relative;
     }
 
     .tag-above-img {
         position: absolute;
         top: 20%;
-        left: 10px;
         padding: 10px 25px;
         background-color: rgb(8, 165, 165);
         color: white;
@@ -922,11 +1096,15 @@ main {
 
     .post-img {
         height: 340px;
-        width: 97%;
+        width: 100%;
         border-radius: 15px;
-        padding: .50rem;
         object-fit: cover;
         object-position: center;
+    }
+
+    .post-img-1 {
+        height: 340px;
+        width: 97%;
     }
 
     #main-3 {
@@ -959,7 +1137,7 @@ main {
     }
 
     .time-to-read {
-        margin-top: 1.5rem;
+        padding-top: 2rem;
         font-size: 14px;
         color: #727070;
         text-decoration: none;
@@ -976,10 +1154,241 @@ main {
 
     .post-content {
         text-decoration: none;
-
         line-height: 30px;
         color: #282424;
     }
 
-  
+    .tags-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        display: none;
+    }
+
+    .authors-div {
+        display: none;
+    }
+
+
+}
+
+@media(max-width:500px) {
+    .post-1 {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        gap: 10px;
+        padding: 10px 5px 5px 5px;
+        margin: 2rem;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+    #about-post-1 {
+        margin-top: 1rem;
+        width: 80%;
+        height: 299px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Urbanist", sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .clock {
+        font-size: medium;
+        color: #FF6481;
+    }
+
+    #time-to-read {
+        font-size: 14px;
+        color: #727070;
+        text-decoration: none;
+
+    }
+
+    #title {
+        text-decoration: none;
+        font-size: 18px;
+        color: #282424;
+        font-weight: 800;
+    }
+
+    .post-content {
+        text-decoration: none;
+        line-height: 20px;
+        font-size: 15px;
+        color: #282424;
+        padding-bottom: 1rem;
+    }
+}
+
+@media(max-width:300px) {
+    .post-1 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        gap: 10px;
+        padding: 10px 5px 5px 5px;
+        margin: 1rem;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+    #about-post-1 {
+        margin-top: 1rem;
+        width: 100%;
+        height: 299px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Urbanist", sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .clock {
+        font-size: medium;
+        color: #FF6481;
+    }
+
+    #time-to-read {
+        font-size: 14px;
+        color: #727070;
+        text-decoration: none;
+
+    }
+
+    #title {
+        text-decoration: none;
+        font-size: 16px;
+        color: #282424;
+        font-weight: 800;
+    }
+
+    .post-content {
+        text-decoration: none;
+        line-height: 20px;
+        font-size: 13px;
+        color: #282424;
+        padding-bottom: 1rem;
+    }
+}
+
+
+/* here start the next page btn  */
+
+.page-count-container {
+    height: auto;
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: "urbanist" sans-serif;
+
+
+}
+
+.page-count {
+    font-size: 15px;
+    font-weight: 500;
+    color: #282424;
+
+}
+
+.next-btn {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF6481;
+    text-align: center;
+    border-radius: 3px;
+    transition: .3s ease-in;
+
+}
+
+.next-btn:hover {
+    background-color: #282424;
+    transition: .1s ease-in;
+
+}
+
+/* for adds */
+#main-last{
+    margin: 0;
+    padding: 0;
+}
+.premium-adds {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    background-color: #fd6f89;
+}
+
+.premium-adds {
+    --mask:
+    radial-gradient(54.08px at 50% 75px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(54.08px at 50% -45px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+    radial-gradient(54.08px at 50% calc(100% - 75px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(54.08px at 50% calc(100% + 45px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+}
+
+
+.title-membership {
+    font-family: "urbanist" sans-serif;
+    font-size: 30px;
+    color: rgb(253, 236, 236);
+    font-weight: 800;
+    margin-bottom: 2rem;
+
+}
+
+.premium-facility {
+    font-size: 19px;
+    color: #140e0e;
+    line-height: 30px;
+    width: 80%;
+}
+
+.see-plan {
+    padding-right: 3rem;
+    text-align: center;
+}
+
+.try-premium {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    color: #443333;
+}
+
+.see-plans-btn {
+    padding: 18px 45px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #262020;
+    border-radius: 3px;
+
+}
+
+.see-plans-btn:hover {
+    background-color: black;
 }
