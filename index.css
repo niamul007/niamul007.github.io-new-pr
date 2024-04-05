@@ -317,11 +317,11 @@ input::placeholder {
 main {
     padding-left: 1.4rem;
     right: 2rem;
+    padding-top: 4rem;
 }
 
 .introducton {
     padding-top: 5rem;
-
     height: 100vh;
     width: 100%;
     display: flex;
@@ -461,6 +461,134 @@ main {
     text-align: center;
     border-radius: 4px;
 }
+@media(min-width:780px){
+    #introducton {
+        height: 100%; /* Set the height to 100% of the viewport height */
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: "Urbanist", sans-serif;
+        gap: 30px;
+        overflow: hidden;
+    }
+    
+    .intro{
+        margin-left: 3rem;
+    }
+
+    
+
+    .input-div {
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        height: 54px;
+        width: 99%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+    }
+
+
+
+}
+
+
+/* for topics */
+
+.tranding-topic {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Urbanist", sans-serif;
+    position: relative;
+}
+
+.tranding-topics-header {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #282424;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.tranding-topics-header .fa-bolt {
+    color: #FF6481;
+}
+
+.topic-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.topic-name {
+    position: absolute;
+    bottom: -2.3rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: .50rem;
+}
+
+.topic-img-div {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.post-count {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    color: #f8f1f1;
+    background-color: #FF6481;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: -.11rem;
+    font-family: "Urbanist", sans-serif;
+
+}
+
+.all-topic-in-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    height: 150px;
+    background-color: #ffff;
+    border-radius: 100px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#topic-container-last {
+    display: none;
+}
+
+#main-2 {
+    margin: 0;
+    padding: 0;
+}
 
 @media(max-width:780px) {
     #introducton {
@@ -598,6 +726,21 @@ main {
 #main-2 {
     margin: 0;
     padding: 0;
+}
+@media(min-width:1300px){
+    .tranding-topic {
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        height: 50%;
+        width: 60%;
+        margin: auto;
+        font-family: "Urbanist", sans-serif;
+        position: relative;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media(max-width:800px) {
@@ -1045,6 +1188,40 @@ main {
     }
     
 } */
+@media(min-width:1300px){
+    .post-1 {
+        height: 70%;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        gap: 80px;
+        padding: 10px 5px 5px 5px;
+        margin: 2rem;
+        text-decoration: none;
+        margin: auto;
+        position: relative;
+    }
+    .post-img-1{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .about-post-1 {
+        position: relative;
+        width: 60%;
+        margin-left: 15rem;
+        height: 299px;
+        display: flex;
+        justify-content:center;
+        align-items: start;
+        flex-direction: column;
+        font-family: "Urbanist", sans-serif;
+        text-decoration: none;
+    }
+    
+}
 @media(max-width:790px) {
     .post-container {
         height: 100%;
@@ -1325,28 +1502,29 @@ main {
 }
 
 /* for adds */
-#main-last{
+#main-last {
     margin: 0;
     padding: 0;
 }
+
 .premium-adds {
     height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     background-color: #fd6f89;
 }
 
 .premium-adds {
     --mask:
-    radial-gradient(54.08px at 50% 75px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
-    radial-gradient(54.08px at 50% -45px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
-    radial-gradient(54.08px at 50% calc(100% - 75px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
-    radial-gradient(54.08px at 50% calc(100% + 45px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
+        radial-gradient(54.08px at 50% 75px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+        radial-gradient(54.08px at 50% -45px, #0000 99%, #000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+        radial-gradient(54.08px at 50% calc(100% - 75px), #000 99%, #0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+        radial-gradient(54.08px at 50% calc(100% + 45px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 
 }
 
@@ -1391,4 +1569,157 @@ main {
 
 .see-plans-btn:hover {
     background-color: black;
+}
+
+.about-premium {
+    margin-left: 2rem;
+}
+
+@media(max-width:740px) {
+    .premium-adds {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        background-color: #fd6f89;
+    }
+    .see-plan {
+        text-align: center;
+        padding-right: 0px;
+
+    }
+    .about-premium {
+        margin-left: 0rem;
+    }
+    
+.premium-facility {
+    font-size: 19px;
+    color: #140e0e;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+
+}
+}
+/* here start the footer option */
+#main-very-last{
+    margin: 0;
+    padding: 0;
+}
+.footer-container{
+    height: 100%;
+    width: 100%;
+}
+.all-div{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 80px;
+}
+.followus{
+    font-size: 20px;
+    margin-bottom: 2rem;
+    color: #282424;
+    font-weight: 700;
+}
+.talking{
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #262020;
+    margin-top: 1.5rem;
+
+}
+.whatsapp-icon{
+    margin-left: 3rem;
+    padding-left: 2rem;
+    margin-bottom: -12px;
+}
+.link-and-icon{
+    height: 40px;
+}
+.fa-links{
+    font-size: 20px;
+    color: #000;
+    margin-left: 3rem;
+}
+.talking:hover{
+    color: #fd6f89;
+}
+.quick-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.q-link-follow{
+    font-size: 20px;
+    color: #262024;
+    font-weight: 800;
+}
+
+.links-of-footer{
+    text-decoration: none;
+    color: #262020;
+    font-size: 15px;
+}
+.links-of-footer:hover{
+    color: #fd6f89;
+}
+.subscriber-email-op-foot{
+    width: 40%;
+    margin-left: 7rem;
+}
+.about-subscriptio-foot{
+    font-size: 16px;
+    color: #443333;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.input-div-foot{
+    margin-top: 2rem;
+    height: 66px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+#email-foot{
+    height: 65px;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    width: 80%;
+
+}
+#btn-foot{
+    border-radius: 3px;
+    margin-right: 8px;
+    height: 58px;
+    width: 130px;
+    color: white;
+    background-color: #fd6f89;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.last-speach{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
 }
