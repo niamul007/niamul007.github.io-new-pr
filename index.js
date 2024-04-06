@@ -44,3 +44,18 @@ document.addEventListener("click",function(event){
         blurDiv.style.display="none";
     }
 })
+
+// for adding hover
+// function forHover() {
+//     let img = document.querySelector(".topic-img");
+//     let num_img2 =document.querySelector(".t-i-2");
+//     num_img2.classList.add('active-h')
+//     img.classList.add('active');
+// }
+
+// function removeHover() {
+//     let img = document.querySelector(".topic-img");
+//     img.classList.remove('active');
+//     let num_img2 =document.querySelector(".t-i-2");
+//     num_img2.classList.remove('active-h')
+// }
