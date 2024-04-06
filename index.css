@@ -460,10 +460,21 @@ main {
     font-weight: 600;
     text-align: center;
     border-radius: 4px;
+    transition: 0.2s ease-in;
+
 }
-@media(min-width:780px){
+
+#btn:hover {
+
+    background-color: #000;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media(min-width:780px) {
     #introducton {
-        height: 100%; /* Set the height to 100% of the viewport height */
+        height: 100%;
+        /* Set the height to 100% of the viewport height */
         display: flex;
         width: 100%;
         justify-content: center;
@@ -472,12 +483,12 @@ main {
         gap: 30px;
         overflow: hidden;
     }
-    
-    .intro{
+
+    .intro {
         margin-left: 3rem;
     }
 
-    
+
 
     .input-div {
         margin-top: 3rem;
@@ -530,6 +541,25 @@ main {
     width: 70px;
     border-radius: 50%;
     position: relative;
+    box-sizing: border-box;
+    transition: .3s ease-in;
+
+
+}
+
+.topic-img:hover {
+
+    border: 4px solid #f25572a5;
+    transition: .3s ease-in;
+
+}
+
+.after-added {
+    color: #282424;
+}
+
+.after-added:hover {
+    color: #fd6f89
 }
 
 .topic-name {
@@ -727,7 +757,8 @@ main {
     margin: 0;
     padding: 0;
 }
-@media(min-width:1300px){
+
+@media(min-width:1300px) {
     .tranding-topic {
         padding-top: 5rem;
         padding-bottom: 4rem;
@@ -1188,7 +1219,7 @@ main {
     }
     
 } */
-@media(min-width:1300px){
+@media(min-width:1300px) {
     .post-1 {
         height: 70%;
         width: 80%;
@@ -1203,25 +1234,28 @@ main {
         margin: auto;
         position: relative;
     }
-    .post-img-1{
+
+    .post-img-1 {
         position: absolute;
         top: 10px;
         left: 10px;
     }
+
     .about-post-1 {
         position: relative;
         width: 60%;
         margin-left: 15rem;
         height: 299px;
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: start;
         flex-direction: column;
         font-family: "Urbanist", sans-serif;
         text-decoration: none;
     }
-    
+
 }
+
 @media(max-width:790px) {
     .post-container {
         height: 100%;
@@ -1285,7 +1319,7 @@ main {
     }
 
     #main-3 {
-        margin: 0;
+        margin: 1rem;
         padding: 0;
     }
 
@@ -1588,47 +1622,54 @@ main {
         overflow: hidden;
         background-color: #fd6f89;
     }
+
     .see-plan {
         text-align: center;
         padding-right: 0px;
 
     }
+
     .about-premium {
         margin-left: 0rem;
     }
-    
-.premium-facility {
-    font-size: 19px;
-    color: #140e0e;
-    line-height: 30px;
-    width: 100%;
-    text-align: center;
 
+    .premium-facility {
+        font-size: 19px;
+        color: #140e0e;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+
+    }
 }
-}
+
 /* here start the footer option */
-#main-very-last{
+#main-very-last {
     margin: 0;
     padding: 0;
 }
-.footer-container{
+
+.footer-container {
     height: 100%;
     width: 100%;
 }
-.all-div{
+
+.all-div {
     padding-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: start;
     gap: 80px;
 }
-.followus{
+
+.followus {
     font-size: 20px;
     margin-bottom: 2rem;
     color: #282424;
     font-weight: 700;
 }
-.talking{
+
+.talking {
     text-decoration: none;
     font-size: 15px;
     margin-bottom: 20px;
@@ -1636,55 +1677,64 @@ main {
     margin-top: 1.5rem;
 
 }
-.whatsapp-icon{
+
+.whatsapp-icon {
     margin-left: 3rem;
     padding-left: 2rem;
     margin-bottom: -12px;
 }
-.link-and-icon{
+
+.link-and-icon {
     height: 40px;
 }
-.fa-links{
+
+.fa-links {
     font-size: 20px;
     color: #000;
     margin-left: 3rem;
 }
-.talking:hover{
+
+.talking:hover {
     color: #fd6f89;
 }
-.quick-links{
+
+.quick-links {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
 }
-.q-link-follow{
+
+.q-link-follow {
     font-size: 20px;
     color: #262024;
     font-weight: 800;
 }
 
-.links-of-footer{
+.links-of-footer {
     text-decoration: none;
     color: #262020;
     font-size: 15px;
 }
-.links-of-footer:hover{
+
+.links-of-footer:hover {
     color: #fd6f89;
 }
-.subscriber-email-op-foot{
+
+.subscriber-email-op-foot {
     width: 40%;
-    margin-left: 7rem;
+    margin-left: 5rem;
 }
-.about-subscriptio-foot{
+
+.about-subscriptio-foot {
     font-size: 16px;
     color: #443333;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
-.input-div-foot{
+.input-div-foot {
     margin-top: 2rem;
     height: 66px;
     width: 100%;
@@ -1694,7 +1744,8 @@ main {
     align-items: center;
     border-radius: 5px;
 }
-#email-foot{
+
+#email-foot {
     height: 65px;
     border: none;
     outline: none;
@@ -1702,7 +1753,8 @@ main {
     width: 80%;
 
 }
-#btn-foot{
+
+#btn-foot {
     border-radius: 3px;
     margin-right: 8px;
     height: 58px;
@@ -1712,9 +1764,15 @@ main {
     border: none;
     font-weight: 500;
     font-size: 14px;
+    transition: .2s ease-in;
+
+}
+#btn-foot:hover{
+    background-color: #000;
+    transition: .2s ease-in;
 }
 
-.last-speach{
+.last-speach {
     padding-top: 6rem;
     padding-bottom: 4rem;
     display: flex;
@@ -1722,4 +1780,145 @@ main {
     align-items: center;
     height: 60%;
     width: 100%;
+    text-align: center;
+}
+
+
+@media(max-width:990px) {
+    .footer-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .all-div {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+    }
+}
+
+@media(max-width:750px) {
+    .footer-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .all-div {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 40px;
+
+    }
+
+    .subscriber-email-op-foot {
+        width: 100%;
+        text-align: center;
+        margin: 1rem;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* here now i style for tag page 1 and 2 */
+
+.about-life-tag-1{
+    padding-top: 6rem;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.life-tag-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+.about-life-tag-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+}
+.details-about-life{
+    width: 50%;
+}
+.lifes-logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.lifeStyle{
+    font-size: 25px;
+    color: #262024;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+.LifeStyle-post-count{
+    color: #443333;
+    font-size: 14px;
+}
+.details-about-life{
+    border-left: 2px solid #d0a6a689;
+}
+.explin-life-tag{
+    margin-left: 2rem;
+    font-size: 14px;
+    color: #262020;
+    line-height: 25px;
+}
+
+@media(max-width:700px){
+    .about-life-tag-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+    }
+    .life-tag-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+    }
+    .details-about-life{
+        width: 100%;
+
+    }
+    .details-about-life{
+        border-left: 0px solid #d0a6a689;
+    }
+    .LifeStyle-tags{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .explin-life-tag{
+        margin-left: 0rem;
+        font-size: 14px;
+        color: #262020;
+        line-height: 25px;
+    }
+    
 }
