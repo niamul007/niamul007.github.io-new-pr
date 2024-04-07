@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #fddee1fb;
+    background-color: #ffeef0cd;
     text-decoration: none;
 
 
@@ -1921,4 +1921,236 @@ main {
         line-height: 25px;
     }
     
+}
+
+
+
+
+
+
+
+
+/* here tarts for page 1  stle😀 */
+#p1-main{
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+.posts-1-page{
+    padding-top: 5rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.post-page-detail{
+    height: 100%;
+    width: 88%;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-content-of-p1{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+@media(max-width:850px){
+    .main-content-of-p1{
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .img-p1-contain{
+        height: 100%;
+        width: 100%;
+    }
+    .p1-img{
+        height: 100%;
+        width:90%;
+        border-radius: 20px;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    .p1-title{
+        font-size: 25px;
+        font-weight: 800;
+        color: #282424;
+        width: 100%;
+        text-align: center;
+    
+    }
+}
+.p1-post-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.p1-title{
+    font-size: 25px;
+    font-weight: 800;
+    color: #282424;
+    width: 50%;
+    text-align: center;
+
+}
+#cal-icon{
+    color: #fd6f89;
+}
+.p1-publish-date{
+    color: #727070;
+    font-size: 15px;
+}
+
+.p1-img{
+    height: 70%;
+    width:50%;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+
+
+
+
+/* for f]page contents */
+.p1-contentns-write{
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    margin-top: 4rem;
+    
+}
+.p1-portal-img{
+    margin-top: 4rem;
+    height: 60%;
+    width: 50%;
+    border-radius: 4px;
+}
+
+.p1-portal-caption{
+    margin-top: .39rem;
+    color: #262024;
+    font-size: 15px;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.showcase-img{
+    height: 300px;
+    width: 266px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in;
+
+}
+.showcase-img:hover{
+    transform: translateY(-5px);
+    transition: .3s ease-in;
+}
+
+.all-p1-icons{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    gap: 15px;
+}
+.Shear-article-with{
+    margin-right: 1rem;
+    font-size: medium;
+    font-weight: 600;
+    color: #282424;
+}
+.p1-icons{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: .2s ease-in;
+
+}
+.p1-icons:hover{
+    transform: translateY(-4px);
+    transition: .2s ease-in;
+
+}
+
+.p1-c-w-1{
+    margin-top: 1rem;
+    bottom: 2rem;
+    width: 90%;
+    text-align: start;
+    color: #5f5353;
+    font-size: 16px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    line-height: 25px;
+}
+.p1-portal-setting{
+    text-align: start;
+    color: #282424;
+    margin-top: 2rem;
+    font-size: 25px;
+    margin-left: 3rem;
+    font-weight: 800;
+}
+.p1-showcase-img{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.gsllery-card{
+    margin-top: .30rem;
+    color: #443333;
+    font-weight: 500;
+}
+
+.p1-exple{
+    color: #fd6f89;
+    text-align: start;
+    text-decoration: none;
+}
+.p1-exple:hover{
+    color: #000;
+    transition: .1s ease-in;
+}
+@media(max-width:650px){
+    .p1-c-w-1{
+        margin-top: 1rem;
+        bottom: 2rem;
+        width: 100%;
+        text-align: start;
+        color: #5f5353;
+        font-size: 16px;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 25px;
+    }
+    .p1-portal-setting{
+        text-align: start;
+        color: #282424;
+        margin-top: 2rem;
+        font-size: 25px;
+        margin-left: 0;
+        padding-left: 1rem;
+        font-weight: 800;
+    }
 }
