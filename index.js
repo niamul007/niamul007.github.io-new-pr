@@ -59,3 +59,23 @@ document.addEventListener("click",function(event){
 //     let num_img2 =document.querySelector(".t-i-2");
 //     num_img2.classList.remove('active-h')
 // }
+
+function forP3Next(){
+    let forNext = document.querySelector(".for-next");
+    forNext.classList.add("active");
+}
+
+function forp3OutNext(){
+    let forNext = document.querySelector(".for-next");
+    forNext.classList.remove("active");
+}
+
+function forP3Prev(){
+    let forPrev = document.querySelector(".for-prev");
+    forPrev.classList.add("active");
+}
+
+function forp3OutPrev(){
+    let forPrev = document.querySelector(".for-prev");
+    forPrev.classList.remove("active");
+}
