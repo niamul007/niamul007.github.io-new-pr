@@ -204,7 +204,7 @@ input::placeholder {
 
 
 .siderBar-appear {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     height: 100%;
@@ -301,7 +301,7 @@ input::placeholder {
 .dark {
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -2139,15 +2139,12 @@ input::placeholder {
 
 }
 
-.p1-c-w-1 {
+.p1-c-w-1-full {
     margin-top: 1rem;
-    bottom: 2rem;
     width: 90%;
     text-align: start;
     color: #5f5353;
     font-size: 16px;
-    margin-left: 3rem;
-    margin-right: 3rem;
     line-height: 25px;
 }
 
@@ -2534,4 +2531,296 @@ background: radial-gradient(circle, rgba(121,223,221,1) 0%, rgba(241,246,243,1) 
 }
 .for-prev-p3{
     text-decoration: none;
+}
+
+
+
+/* style for full oage  */
+#main-full{
+    height: 100%;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+.main-container-for-full{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-img0-full{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.full-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    border-radius: 14px;
+    margin-top: -5rem;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+}
+.for-full{
+    height: 27%;
+    width: 95%;
+    border-radius: 20px;
+
+}
+
+
+.header-for-full{
+    font-size: 25px;
+    color: #262024;
+    font-weight: 800;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+.p1-publish-date{
+    font-size: 13px;
+    font-weight: 700;
+    color: #585454;
+}
+#in-full{
+    color: #FF6481;
+}
+#in-full:hover{
+    color: #140e0e;
+}
+
+@media(max-width:665px){
+    .for-full{
+        height: 27%;
+        width: 100%;
+        border-radius: 2px;
+    
+    }
+    .full-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 97%;
+        height: 100%;
+        background-color: white;
+        border-radius: 14px;
+        margin-top: 0rem;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+    
+    }
+    
+}
+
+
+
+
+/* for log in page */
+.sign-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+
+#input-sign{
+    width: 50%;
+}
+.logo-sign{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.all-in-one-place{
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.all-sign-in-item{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    text-align: center;
+}
+.logo-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-in-sign{
+    margin-top: 5rem;
+}
+.about-logo{
+    font-size: 15px;
+    margin-top: .50rem;
+    color: #443333;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.header-sign{
+    font-size: 30px;
+    font-weight: 700;
+    color: #282424;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.color-pink{
+    color: #fd6f89;
+}
+.sign-text{
+    font-weight: 400;
+    font-size: 19px;
+    color: #5f5353;
+    margin-bottom: 2rem;
+
+}
+.for-sign-page-img{
+    height: 100vh;
+    width: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+.for-sign0in-div{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.sign-input{
+    width: 68%;
+    height: 59px;
+    border: none;
+    margin-left: 1rem;
+}
+
+.sign-input:focus{
+    outline: none;
+}
+#btn-sign {
+    margin-right: .30rem;
+    width: 130px;
+    height: 46px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border: none;
+    color: rgba(255, 255, 255, 0.864);
+    background-color: #FF6481;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    transition: 0.2s ease-in;
+    align-self: center;
+
+}
+
+#btn-sign:hover {
+
+    background-color: #000;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.sign0qna{
+    font: 14px;
+    color: #282424;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.sign-in-now{
+    color: #FF6481;
+}
+.sign-in-now:hover{
+    color: #140e0e;
+}
+@media(max-width:1000px){
+    .for-sign-page-img{
+        height: 100vh;
+        width: 500px;
+        object-fit: cover;
+        object-position: center;
+        display: none;
+    }
+    .sign-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .all-sign-in-item{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 0px;
+        text-align: center;
+    }
+}
+@media(max-width:400px){
+    .for-sign0in-div{
+        height: 60px;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+    }
+    .sign-input{
+        width: 68%;
+        height: 59px;
+        border: none;
+        margin-left: 1rem;
+    }
+    #btn-sign {
+        margin-right: .30rem;
+        width: 110px;
+        height: 46px;
+        padding: 0px 0px;
+        border: none;
+        color: rgba(255, 255, 255, 0.864);
+        background-color: #FF6481;
+        font-size: 11px;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 4px;
+        transition: 0.2s ease-in;
+    
+    }
+    .all-in-one-place{
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media(min-width:1400px){
+    .for-sign-page-img{
+        height: 100vh;
+        width: 800px;
+        object-fit: cover;
+        object-position: center;
+    }
 }
