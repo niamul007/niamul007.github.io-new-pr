@@ -42,6 +42,9 @@ document.addEventListener("click",function(event){
     if(isClickInside){
         searchbar.style.display="none";
         blurDiv.style.display="none";
+        document.body.style.overflow = 'auto';
+        // Disable text selection
+        document.body.style.userSelect = 'auto';
     }
 })
 
