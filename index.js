@@ -85,5 +85,3 @@ function forp3OutPrev(){
 
 
 
-// for sec page text
-
