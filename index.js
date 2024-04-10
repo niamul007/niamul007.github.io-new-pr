@@ -82,3 +82,8 @@ function forp3OutPrev(){
     let forPrev = document.querySelector(".for-prev");
     forPrev.classList.remove("active");
 }
+
+
+
+// for sec page text
+
