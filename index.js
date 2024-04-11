@@ -65,22 +65,22 @@ document.addEventListener("click",function(event){
 
 function forP3Next(){
     let forNext = document.querySelector(".for-next");
-    forNext.classList.add("active");
+    forNext.classList.add("prevActive");
 }
 
 function forp3OutNext(){
     let forNext = document.querySelector(".for-next");
-    forNext.classList.remove("active");
+    forNext.classList.remove("prevActive");
 }
 
 function forP3Prev(){
     let forPrev = document.querySelector(".for-prev");
-    forPrev.classList.add("active");
+    forPrev.classList.add("prevActive");
 }
 
 function forp3OutPrev(){
     let forPrev = document.querySelector(".for-prev");
-    forPrev.classList.remove("active");
+    forPrev.classList.remove("prevActive");
 }
 
 
