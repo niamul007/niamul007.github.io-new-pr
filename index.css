@@ -119,7 +119,7 @@ body {
 
 .searchApper {
     font-family: "urbanist" sans-serif;
-    position: absolute;
+    position: fixed;
     top: 40%;
     /* Vertically center */
     left: 50%;
@@ -133,7 +133,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    z-index: 99;
+    z-index: 999;
     display: none;
 }
 
@@ -179,7 +179,7 @@ input::placeholder {
 }
 
 .blur {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -189,6 +189,8 @@ input::placeholder {
     backdrop-filter: blur(6px);
     background-color: #514c4c7c;
     display: none;
+    z-index: 90;
+
 }
 
 
@@ -379,27 +381,27 @@ input::placeholder {
 
 @keyframes dance {
     0% {
-        border-radius: 86% 82% 100% 76% / 69% 74% 78% 100%;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
         /* Start with a circular shape */
     }
 
     20% {
-        border-radius: 76% 82% 100% 51% / 69% 73% 66% 100%;
+        border-radius: 30% 70% 70% 30% / 30% 52% 48% 70% ;
         /* Keep it circular during the animation */
     }
 
     40% {
-        border-radius: 93% 82% 100% 85% / 69% 73% 77% 100%;
+        border-radius: 59% 41% 62% 38% / 51% 52% 48% 49% ;
         /* Still circular */
     }
 
     60% {
-        border-radius: 100% 82% 100% 85% / 100% 100% 100% 100%;
+        border-radius:37% 63% 53% 47% / 51% 34% 66% 49% ;
         /* Maintain circularity */
     }
 
     80% {
-        border-radius: 88% 100% 100% 59% / 100% 37% 68% 100%;
+        border-radius: 46% 54% 66% 34% / 51% 34% 66% 49% ;
         /* End with a circular shape */
     }
 
@@ -418,7 +420,6 @@ input::placeholder {
     align-items: center;
     border-radius: 5px;
     position: relative;
-    z-index: 1;
 }
 
 .connet-p {
@@ -2391,10 +2392,11 @@ input::placeholder {
     transition: .2s ease-in;
 }
 
-/* .for-prev.active {
-    padding: 10px 27px;
+.prevActive{
+    padding: 10px 15px;
     transition: .2s ease-in;
-} */
+
+}
 
 @media(max-width:800px) {
     .title-p1-next {
