@@ -210,7 +210,8 @@ input::placeholder {
     top: 0;
     right: 0;
     height: 100%;
-    width: 500px;
+    max-width: 500px;
+    min-width: 370px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -2389,14 +2390,16 @@ input::placeholder {
 
 .active{
     padding: 10px 27px;
+    padding-left: 25px;
+    transition: .2s ease-in;
+}
+.preactive{
+    padding: 10px 27px;
+    padding-left: 25px;
     transition: .2s ease-in;
 }
 
-.prevActive{
-    padding: 10px 15px;
-    transition: .2s ease-in;
 
-}
 
 @media(max-width:800px) {
     .title-p1-next {
@@ -3075,4 +3078,9 @@ background: radial-gradient(circle, rgba(121,223,221,1) 0%, rgba(241,246,243,1) 
         align-items: start;
         flex-wrap: wrap;
     }
+}
+
+
+.logo{
+    margin-left: -3.60rem;
 }
