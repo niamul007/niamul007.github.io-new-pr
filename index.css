@@ -3082,10 +3082,10 @@ background: radial-gradient(circle, rgba(121,223,221,1) 0%, rgba(241,246,243,1) 
 
 
 .logo{
-    margin-left: -3.60rem;
+    margin-left: 0rem;
 }
 @media(max-width:500px){
-    .logo{
+    #logo{
         margin-left: 0rem;
     }
 }
